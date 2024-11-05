@@ -1,0 +1,150 @@
+/* App.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff; /* Light background color */
+  color: #333; /* Dark text color for contrast */
+}
+
+.app-container {
+  max-width: 1200px; /* Maximum width for the app container */
+  margin: 0 auto; /* Center the app container */
+  padding: 20px;
+  text-align: center; /* Center all text */
+}
+
+h1 {
+  color: #2c3e50; /* Darker color for the heading */
+  margin: 20px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.cover-photo{
+  width: 100%;
+  position: relative;
+  z-index: -1;
+}
+
+nav {
+  background-color: #3498db; /* Blue background for the navbar */
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex; /* Flexbox for horizontal nav */
+  justify-content: center; /* Center items */
+}
+
+.nav-list li {
+  margin: 0 15px; /* Spacing between items */
+}
+
+.nav-list a {
+  color: white; /* White text color for links */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Bold text for emphasis */
+  padding: 10px 15px; /* Padding for links */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.nav-list a:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+.grid-container {
+  display: grid; /* CSS Grid for layout */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive columns */
+  gap: 20px; /* Space between grid items */
+  margin-top: 20px; /* Space above the grid */
+}
+
+.grid-item {
+  padding: 20px;
+  background-color: #ffffff; /* White background for sections */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h2 {
+  color: #2980b9; /* Darker blue for section headings */
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: none; /* No bullets */
+  padding: 0; /* Remove padding */
+}
+
+li {
+  margin: 10px 0; /* Spacing between list items */
+  transition: transform 0.3s, box-shadow 0.3s; /* Animation */
+}
+
+li:hover {
+  transform: translateY(-5px); /* Slight lift effect */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .nav-list {
+      flex-direction: column; /* Stack items on smaller screens */
+      align-items: center; /* Center items */
+  }
+
+  .nav-list li {
+      margin: 10px 0; /* Spacing for stacked items */
+  }
+
+  .grid-container {
+      grid-template-columns: 1fr; /* Single column on small screens */
+  }
+}
+
+/* 3D component */
+
+.threeDCard {
+  perspective: 1000px;
+}
+
+.threeDCardContent {
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.group:hover .threeDCardContent {
+  transform: rotateY(15deg) rotateX(10deg);
+}
+
+.threeDCardImage {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.threeDCardText {
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateZ(50px);
+}
+
+.threeDCardTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.threeDCardDescription {
+  font-size: 1rem;
+  color: #555;
+}

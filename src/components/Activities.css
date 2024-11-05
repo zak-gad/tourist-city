@@ -1,0 +1,35 @@
+/* Activities.css */
+
+h2 {
+    color: #2980b9; /* Darker blue for section headings */
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none; /* No bullets */
+    padding: 0; /* Remove padding */
+}
+
+li {
+    margin: 10px 0; /* Spacing between list items */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animation */
+}
+
+li:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+button {
+    background-color: #3498db; /* Blue background for buttons */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
